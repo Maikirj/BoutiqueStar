@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Boutique Stars</title>
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header de la página -->
+    <header>
+        <div class="logo">
+            <h1>Boutique Stars</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html" class="active">Carrito</a>
+        </nav>
+    </header>
+
+    <!-- Carrito de compras -->
+    <div class="cart-container">
+        <h2>Tu Carrito de Compras</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="joya1.jpg" alt="Producto 1">
+                <div class="item-info">
+                    <h3>Blusa de Seda</h3>
+                    <p>Color: Rosa</p>
+                    <p>Tamaño: M</p>
+                    <div class="item-quantity">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                    <p class="price">$29.99</p>
+                </div>
+                <button class="remove-item"><i class="fas fa-trash"></i> Eliminar</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="segundobolso.jpg" alt="Producto 2">
+                <div class="item-info">
+                    <h3>Falda Larga</h3>
+                    <p>Color: Negro</p>
+                    <p>Tamaño: S</p>
+                    <div class="item-quantity">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                    <p class="price">$19.99</p>
+                </div>
+                <button class="remove-item"><i class="fas fa-trash"></i> Eliminar</button>
+            </div>
+        </div>
+
+        <!-- Total y botón para proceder al pago -->
+        <div class="cart-summary">
+            <p><strong>Total: $49.98</strong></p>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Boutique Stars. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
